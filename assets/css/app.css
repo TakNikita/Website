@@ -1,0 +1,126 @@
+/* Target the submenu */
+.ubermenu-submenu-id-20 {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Target each item in the submenu */
+.ubermenu-submenu-id-20 .ubermenu-item {
+    flex: 0 1 auto; 
+    margin: 15px; 
+}
+
+/* Adjust the link within each item for better presentation */
+.ubermenu-submenu-id-20 .ubermenu-item a.ubermenu-target {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-decoration: none; 
+}
+
+/* Adjust the image within each link */
+.ubermenu-submenu-id-20 .ubermenu-item a.ubermenu-target img {
+    margin-bottom: 10px; 
+}
+.ubermenu-submenu-id-20 {
+    margin-top: 80px; 
+    
+}
+
+/*for  button*/
+.arrow-button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+  }
+  
+  .arrow-button:hover {
+    background-color: #45a049; 
+  }
+  
+  .arrow {
+    margin-left: 5px; 
+  }
+  
+  /*height of images*/
+  .about .img-fluid {
+    height: 500px; 
+    width: auto; 
+  }
+
+
+/*last section*/
+.large-heading {
+    text-align: center;
+    font-size: 36px; 
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.specifications {
+    list-style: none;
+    padding: 10;
+  }
+  
+  .specifications li {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    transition: all 0.3s ease; /* Transition effect */
+  }
+  
+  .specifications li::before {
+    content: '•';
+    color: #007bff;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Hover effect */
+  .specifications li:hover {
+    color: #007bff; 
+    background-color: #f0f0f0; 
+  }
+  
+
+
+
+  /*anitmation on uber...*/
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .ubermenu-item {
+    animation: fadeInUp 0.5s ease-out forwards;
+    opacity: 0; 
+  }
+  
+  
+  .ubermenu-item:nth-child(1) { animation-delay: 0s; }
+  .ubermenu-item:nth-child(2) { animation-delay: 0.1s; }
+  .ubermenu-item:nth-child(3) { animation-delay: 0.2s; }
+  
+  
