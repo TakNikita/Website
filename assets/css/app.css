@@ -1,3 +1,11 @@
+/*padding section*/
+
+section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+
 /* Target the submenu */
 .ubermenu-submenu-id-20 {
     display: flex; 
@@ -55,17 +63,12 @@
   
   /*height of images*/
   .about .img-fluid {
-    height: 500px; 
+    height: 29em; 
     width: auto; 
   }
 
 
 /*last section*/
-.large-heading {
-    text-align: center;
-    font-size: 36px; 
-    animation: fadeIn 1s ease-in-out;
-}
 
 
 .specifications {
@@ -123,4 +126,14 @@
   .ubermenu-item:nth-child(2) { animation-delay: 0.1s; }
   .ubermenu-item:nth-child(3) { animation-delay: 0.2s; }
   
+  /*bullets css */
   
+  .about .content ul {
+    list-style-type: disc; /* or 'circle' or 'square', depending on your preference */
+    margin-left: 1px; /* Adjust as needed for alignment */
+  }
+
+  .about .content ul li {
+    margin-bottom: 15px; /* Adjust as needed for spacing between items */
+  }
+
