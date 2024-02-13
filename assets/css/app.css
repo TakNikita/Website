@@ -129,11 +129,86 @@ section {
   /*bullets css */
   
   .about .content ul {
-    list-style-type: disc; /* or 'circle' or 'square', depending on your preference */
-    margin-left: 1px; /* Adjust as needed for alignment */
+    list-style-type: disc;
+    margin-left: 1px; 
   }
 
   .about .content ul li {
-    margin-bottom: 15px; /* Adjust as needed for spacing between items */
+    margin-bottom: 15px; 
   }
 
+
+
+/*alternate section*/
+
+
+  .alternate-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.alternate-section .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alternate-section img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.alternate-section.reverse .content {
+    flex-direction: row-reverse;
+}
+
+.alternate-section.reverse img {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.text {
+    max-width: 400px;
+}
+
+
+
+.alternate-section {
+  margin-bottom: 20px; 
+}
+
+.alternate-section .text h2 {
+  font-weight: bold; 
+  font-size: 25px; 
+}
+
+body h1 {
+  text-align: center;
+  font-weight: bold; 
+  font-size: 40px; 
+  margin-bottom: 20px;
+}
+
+
+
+.alternate-section {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s ease;
+}
+
+.alternate-section.visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.35s; /* add a delay to create a staggered effect */
+}
+
+.alternate-section.reverse {
+  transform: translateX(50px);
+}
+
+.alternate-section.reverse.visible {
+  transform: translateX(0);
+}
